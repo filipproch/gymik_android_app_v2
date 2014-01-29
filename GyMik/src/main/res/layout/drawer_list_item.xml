@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawer_item_header">
+        <TextView
+            android:id="@+id/drawer_item_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Header"
+            style="@style/ListViewHeaderItem"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_divider_height"
+            android:background="@color/list_view_item_divider"
+            android:layout_below="@+id/drawer_item_header_text"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/drawer_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListViewItemText"/>
+</LinearLayout>

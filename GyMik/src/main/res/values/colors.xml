@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jidelnicek_highlighted_meal">#CCCCCC</color>
+    <color name="list_view_item_divider">#aaaaaa</color>
+    <color name="button_text_color">#ffffff</color>
+</resources>

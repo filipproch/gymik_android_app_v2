@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="GymikAppTheme" parent="@style/_GymikAppTheme"/>
+  <style name="_GymikAppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    <item name="android:editTextBackground">@drawable/gymikapptheme_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#9933b5e5</item>
+    <item name="android:textSelectHandleLeft">@drawable/gymikapptheme_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/gymikapptheme_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/gymikapptheme_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewGymikAppTheme</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/gymikapptheme_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/gymikapptheme_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonGymikAppTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonGymikAppTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerGymikAppTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarGymikAppTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarGymikAppTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarGymikAppTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigGymikAppTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallGymikAppTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleGymikAppTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/gymikapptheme_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/gymikapptheme_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/gymikapptheme_fastscroll_thumb_holo</item>
+
+      <item name="android:actionBarStyle">@style/BlueActionBar</item>
+
+  </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    	<PreferenceCategory
+    	    android:title="Aplikace">
+    	    <Preference
+		        android:title="O Aplikaci"
+				android:key="aboutApp"/>
+    	    <Preference
+		        android:title="Web autora"
+				android:key="authorWeb"/>
+    	    <Preference
+    	        android:title="Aktivovat PRO"
+    	        android:key="activatePro"
+    	        android:enabled="false"/>
+    	</PreferenceCategory>
+    	<PreferenceCategory
+    	    android:title="Třída">
+    	    <Preference
+    	        android:title="Změnit třídu"
+    	        android:key="changeClass"/>
+    	</PreferenceCategory>
+    	<PreferenceCategory
+    	    android:title="Suplování">
+    	    <Preference
+    	        android:title="Aktualizovat suplování"
+    	        android:key="updateSuplov"/>
+    	    <CheckBoxPreference
+    	        android:title="Stahovat automaticky"
+    	        android:summary="Aktivuje automatické stahování suplování na pozadí"
+    	        android:defaultValue="false"
+    	        android:key="updateSuplovAuto"/>
+    	    <ListPreference
+    	        android:title="Doba stahování"
+    	        android:summary="Určuje kdy během dne se bude stahovat nové suplování"
+    	       	android:entries="@array/dayTimes"
+				android:entryValues="@array/dayTimesValues"
+    	        android:key="updateSuplovTime"/>
+    	</PreferenceCategory>
+    	<PreferenceCategory
+            android:title="Mapa">
+            <CheckBoxPreference
+                android:title="Zobrazovat barvy"
+                android:defaultValue="false"
+                android:summary="Zapíná/vypína zobrazení barev tříd na mapě"
+                android:key="mapShowColors" />
+            <Preference
+                android:title="Aktualizovat mapu"
+                android:key="updateMap"
+                android:summary="Aktualizuje mapové podklady"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Bakaláři">
+            <Preference
+	            android:title="Nastavit přihlašování"
+	            android:key="setupBakalari" />
+            <Preference
+    	        android:title="Aktualizovat rozvrh/známky"
+    	        android:key="updateRozvrh"/>
+      	</PreferenceCategory>
+      	<PreferenceCategory
+            android:title="Jídelna">
+            <Preference
+                android:title="Nastavit přihlašování"
+                android:key="setupJidelna" />
+            <Preference
+    	        android:title="Aktualizovat jídelníček"
+    	        android:key="updateJidlo"/>
+        </PreferenceCategory>
+</PreferenceScreen>

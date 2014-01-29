@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <TextView
+        android:textSize="25sp"
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@drawable/ab_solid_example"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:id="@+id/znamky_znamka_hodnota"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:id="@+id/znamky_znamka_vaha"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:id="@+id/znamky_znamka_datum"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:id="@+id/znamky_znamka_popis"/>
+
+</LinearLayout>

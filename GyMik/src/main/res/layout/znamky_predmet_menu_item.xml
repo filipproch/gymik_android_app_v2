@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100">
+    
+    <TextView
+        android:textSize="25sp"
+        android:layout_width="0dp"
+        android:layout_weight="80"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:id="@+id/znamky_predmet_name"
+        android:layout_toLeftOf="@+id/znamky_predmet_average"/>
+
+    <TextView 
+        android:textSize="22sp"
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="#777777"
+        android:gravity="center"
+        android:padding="15dp"
+        android:id="@+id/znamky_predmet_average"/>
+
+</LinearLayout>

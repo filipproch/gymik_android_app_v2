@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="versionInfo">Změny v aplikaci - 2.0</string>
+    <string name="versionNodes"> - kompletní změna designu\n- vylepšení známek\n- objednávání jídla\n- chytrá upozornění</string>
+
+    <string name="app_name">GyMik</string>
+    <string name="school_name">Gymnázium Plzeň</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="action_reload">Obnovit</string>
+    <string name="latestNews">Novinky</string>
+    <string name="latestSupl">Suplování</string>
+    <string name="drawer_open">Otevřít navigaci</string>
+    <string name="drawer_close">Zavřít navigaci</string>
+    <string name="prizemi">Přízemí</string>
+    <string name="p1patro">1.patro</string>
+    <string name="p2patro">2.patro</string>
+    <string name="vestavba">Vestavba</string>
+    <string name="pondeli">Pondělí</string>
+    <string name="utery">Úterý</string>
+    <string name="streda">Středa</string>
+    <string name="ctvrtek">Čtvrtek</string>
+    <string name="patek">Pátek</string>
+    <string name="pickClass">Vyberte třídu :</string>
+    <string name="continueString">Pokračovat</string>
+    <string name="firstRun">Instalace</string>
+    <string name="pleaseWait">Prosím vyčkejte...</string>
+    <string name="warning">Upozornění</string>
+    <string name="exitDialog1">Opravdu chcete aplikaci ukončit během úvodního nastavení? Tato akce není doporučena.</string>
+	<string name="exitDialog2">V této fázi aplikaci nelze ukončit, prosím vyčkejte na stažení potřebných dat.</string>
+	<string name="noInternetDataDownloadFailed">Stažení dat potřebných pro spuštění se nezdařilo z důvodu nedostupnosti připojení k internetu. Připojte se a zkuste to znovu.</string>
+	<string name="cantDownloadActualDataNoInternet">Nepodařilo se stáhnout aktuální data z důvodu nedostupného připojení k internetu</string>
+	<string name="dialogOk">Ok</string>
+	<string name="dialogExit">Konec</string>
+	<string name="dialogSettings">Nastavení</string>
+	<string name="dialogClose">Zavřít</string>
+	<string name="dialogLink">Odkaz</string>
+	<string name="noInternet">Internet nedostupný, prosím připojte se k internetu</string>
+	<string name="noStorage">Není dostupné úložiště. Aplikace ke svému spuštění potřebuje externí úložiště(SD kartu), které je nyní nedostupné.</string>
+	<string name="sDialogHodina">Hodina : </string>
+	<string name="sDialogPredmet">Předmět : </string>
+	<string name="sDialogStav">Stav : </string>
+	<string name="sDialogSkupina">Skupina : </string>
+	<string name="sDialogMistnost">Místnost : </string>
+	<string name="sDialogNahrazuje">Nahrazuje : </string>
+	<string name="bakUser">Uživatelské jméno : </string>
+	<string name="bakPsw">Heslo : </string>
+	<string name="customClassName">JINÁ</string>
+	<string name="missingRozvrh">Chybí rozvrh, je třeba se přihlásit v nastavení a stáhnout rozvrh</string>
+	<string name="predmetName">Předmět</string>
+	<string name="predmetAverage">Průměr</string>
+    <string name="download">Stáhnout...</string>
+	
+	<string-array name="dayTimes">
+	    <item>Půlnoc</item>
+	    <item>Ráno</item>
+	    <item>Kolem 11</item>
+	    <item>Odpoledne</item>
+	</string-array>
+	
+	<string-array name="dayTimesValues">
+	    <item>midnight</item>
+	    <item>morning</item>
+	    <item>school</item>
+	    <item>afternoon</item>
+	</string-array>
+
+    <bool name="showFullTitle">false</bool>
+
+	<string name="rozvrhStyle" formatted="false">        /* Prehled - rozvrh */
+	
+	.rozbunka {
+	font-size:10px;
+	width:650px;
+	table-layout:fixed;
+	border-collapse:collapse;
+	border-width:1px;
+	border-style:solid;
+	background-color:#FFFFF0;
+	border-color:gray;
+	}
+	
+	.rozbunka td {
+	 text-align :center;
+	 vertical-align:top;
+	 width:30pt;
+	}
+	
+	.rozbunka td.rozden 
+	{
+	    vertical-align:middle;
+	}
+	
+	.rozbunka td.rozpredmet1abs
+	{
+	    vertical-align:middle;
+	}
+	
+	.rozbunka td.rozpredmetprazdny 
+	{
+	    width:60pt;
+	}
+	
+	
+	.rozbunka td.rozpredmetprazdnyaa 
+	{
+	    width:60pt;
+	}
+	
+	.rozbunka td.rozpredmet1
+	{
+	    width:60pt;
+	}
+	
+	
+	
+	.roznumhod {
+	font-size:10px;
+	font-weight:bold;
+	background-color:#FFFFFF;
+	}
+	
+	.rozpopishod {
+	font-size:8px;
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+	background-color:#FFFFFF;
+	}
+	
+	.rozden {
+	font-size:10px;
+	font-weight:bold;
+	height:65px;
+	background-color:#FFFFFF;
+	
+	}
+	
+	.rozpredmet1,.rozpredmet1mo {
+	font-size:14px;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-top-style:solid;
+	border-top-width:1px;
+	margin:0px;
+	padding:0px;
+	height:100%;
+	}
+	
+	
+	.rozpredmet1 {
+	border-left-color:gray;
+	border-top-color:gray;
+	}
+	
+	.rozpredmet1zm,.rozpredmet1aa {
+	font-size:14px;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-top-style:solid;
+	border-top-width:1px;
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+	}
+	
+	
+	.rozpredmet1div,.rozpredmet1divrel {
+	height:100%;
+	min-height:100%;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	top:15pt;
+	position:relative;
+	
+	}
+	
+	
+	.rozpredmet1divrel,.rozpredmet1divucrel
+	{
+	    color:#AAAAAA;
+	}
+	
+	
+	.rozpredmet1divuc,.rozpredmet1divucrel{
+	height:100%;
+	min-height:100%;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	top:5pt;
+	position:relative;
+	
+	}
+	
+	.rozpredmet1divprazdny 
+	{
+	height:40pt;
+	width:100%;
+	text-align:center;
+	position:relative;
+	}
+	
+	
+	.rinfo,.rinfoaa
+	{
+	    position:absolute;
+	    right:0px;
+	    top:0px;
+	    width:13px;
+	    height:13px;
+	font-size:7pt;
+	text-align:center;
+	}
+	
+	.rinfo
+	{
+	background-color:#ff8888;
+	display:none;
+	}
+	
+	.rinfoaa
+	{
+	background-color:#70A838;
+	display:none;
+	}
+	
+	.rozpredmet1div a 
+	{
+	 text-decoration:none;
+	 color:#8B5A2B;
+	}
+	
+	.rozpredmet1div a:hover {
+	 color:#8B5A2B;
+	 text-decoration :underline;
+	}
+	
+	.rozpredmet1div a:visited {
+	 color:#8B5A2B;
+	 text-decoration :none;
+	}
+	
+	.rozpredmet1div a:link {
+	 color:#8B5A2B;
+	 text-decoration :none;
+	}
+	
+	.rozpredmet1divrel a,.rozpredmet1divucrel a 
+	{
+	 text-decoration:none;
+	 color:#AAAAAA;
+	}
+	
+	.rozpredmet1divrel a:hover,.rozpredmet1divucrel a:hover {
+	 color:#AAAAAA;
+	 text-decoration :underline;
+	}
+	
+	.rozpredmet1divrel a:visited,.rozpredmet1divucrel a:visited {
+	 color:#AAAAAA;
+	 text-decoration :none;
+	}
+	
+	.rozpredmet1divrel a:link,.rozpredmet1divucrel a:link {
+	 color:#AAAAAA;
+	 text-decoration :none;
+	}
+	
+	
+	.rozpredmet1zmdiv {
+	vertical-align:top;
+	width:100%;
+	height:100%;
+	position:relative;
+	}
+	
+	.rozpredmet1zm {
+	border-left-color:gray;
+	border-top-color:gray;
+	background-color:#FFC1C1;
+	}
+	
+	
+	.rozpredmet1aa {
+	border-left-color:gray;
+	border-top-color:gray;
+	background-color:#A3D175;
+	}
+	
+	
+	.rozpredmetprazdny {
+	background-color:#F5F5F5;
+	border-left-color:gray;
+	border-top-color:gray;
+	}
+	
+	
+	.rozpredmetprazdnyaa {
+	background-color:#A3D175;
+	border-left-color:gray;
+	border-top-color:gray;
+	}
+	
+	.rozpredmetprazdny,.rozpredmetprazdnyaa {
+	font-size:14px;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-top-style:solid;
+	border-top-width:1px;
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+	}
+	
+	.rozucitel1,.rozucitel1mo,.rozucitel2abs {
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	}
+	
+	.rozucitel1zm,.rozucitel1aa {
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	}
+	
+	.rozskupina1 {
+	font-size:9px;
+	font-weight:normal;
+	border-left-style:solid;
+	border-left-width:1px;
+	height:20pt;
+	position:relative;
+	overflow:hidden;
+	}
+	
+	.rozskupina1div,.rozmistnost1div,.rozskupina1divrel,.rozmistnost1divrel
+	{
+	vertical-align:middle;
+	top:15pt;
+	position:relative;
+	}    
+	
+	.rozucitel1div,.rozucitel1divrel
+	{
+	vertical-align:middle;
+	top:7pt;
+	position:relative;
+	}    
+	
+	.rozucitel1divrel 
+	{
+	    color:#AAAAAA;
+	}
+	
+	
+	.rozskupina1divuc,.rozmistnost1divuc,.rozskupina1divucrel,.rozmistnost1divucrel
+	{
+	top:10pt;
+	position:relative;
+	}    
+	
+	.rozskupina1divucrel,.rozmistnost1divucrel,.rozskupina1divrel,.rozmistnost1divrel 
+	{
+	    color:#AAAAAA;
+	}
+	
+	
+	.rozskupina1zm,.rozskupina1aa {
+	font-size:9px;
+	font-weight:normal;
+	border-left-style:solid;
+	border-left-width:1px;
+	height:20pt;
+	}
+	
+	
+	
+	.rozskupina1mo {
+	font-size:9px;
+	font-weight:normal;
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	height:20pt;
+	}
+	
+	.rozmistnost1 {
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	height:20pt;
+	position:relative;
+	}
+	
+	
+	.rozmistnost1mo {
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	height:20pt;
+	
+	}
+	
+	
+	.rozmistnost1zm,.rozmistnost1aa {
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	}
+	
+	
+	.rozmistnost1only {
+	border-left-style:solid;
+	border-left-width:1px;
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	height:20pt;
+	position:relative;
+	}
+	
+	
+	.rozmistnost1onlymo {
+	border-left-style:solid;
+	border-left-width:1px;
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	height:20pt;
+	}
+	
+	
+	.rozmistnost1onlyzm,.rozmistnost1onlyaa {
+	border-left-style:solid;
+	border-left-width:1px;
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	height:20pt;
+	}
+	
+	
+	.rozpredmet1abs {
+	font-size:14px;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-top-style:solid;
+	border-top-width:1px;
+	margin:0px;
+	padding:0px;
+	}
+	
+	.rozucitel1abs {
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+	border-left-style:solid;
+	border-left-width:1px;
+	}
+	
+	.rozskupina1abs {
+	font-size:9px;
+	font-weight:normal;
+	border-left-style:solid;
+	border-left-width:1px;
+	overflow:visible ;
+	}
+	
+	.rozmistnost1abs {
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	}
+	
+	.rozmistnost1onlyabs {
+	border-left-style:solid;
+	border-left-width:1px;
+	font-size:9px;
+	font-weight:normal;
+	font-style:italic;
+	}
+	
+	.rozpredmet2 {
+	font-size:11px;
+	font-weight:bold;
+	border-top-style:solid;
+	border-top-width:1px;
+	margin:0px;
+	padding:0px;
+	}
+	
+	.rozpredmet2div {
+	height:100%;
+	min-height:100%;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	}
+	
+	
+	.rozpredmet2prvni {
+	font-size:11px;
+	font-weight:bold;
+	margin:0px;
+	padding:0px;
+	}
+	
+	.rozucitel2 {
+	font-size:8px;
+	font-style:italic;
+	font-weight:bold;
+	}
+	
+	.rozskupina2 {
+	font-size:8px;
+	font-weight:normal;
+	}
+	
+	.rozmistnost2 {
+	font-size:8px;
+	font-weight:normal;
+	font-style:italic;
+	}
+	
+	.rozmistnost2only {
+	font-size:8px;
+	font-weight:normal;
+	font-style:italic;
+	}
+	
+	.rozbunka2 {
+	font-size:8px;
+	border-collapse:collapse;
+	border-width:1px;
+	padding:0;
+	margin:7px;
+	height:65px;
+	vertical-align:top;
+	}
+	
+	
+	.rozucitel2abs {
+	border-left-color:gray;
+	background-color:#F5F5F5;
+	}
+	
+	.rozucitel1 {
+	color:#FF0000;
+	border-left-color:gray;
+	}
+	
+	.rozucitel1zm {
+	color:#FF0000;
+	border-left-color:gray;
+	background-color:#FFC1C1;
+	}
+	
+	.rozucitel1aa {
+	color:#FF0000;
+	border-left-color:gray;
+	background-color:#A3D175;
+	}
+	
+	.rozskupina1 {
+	border-left-color:gray;
+	}
+	
+	.rozskupina1zm {
+	border-left-color:gray;
+	background-color:#FFC1C1;
+	}
+	
+	.rozskupina1aa {
+	border-left-color:gray;
+	background-color:#A3D175;
+	}
+	
+	.rozmistnost1zm {
+	background-color:#FFC1C1;
+	}
+	
+	.rozmistnost1aa {
+	background-color:#A3D175;
+	}
+	
+	
+	.rozmistnost1only {
+	border-left-color:gray;
+	}
+	
+	.rozmistnost1onlyzm {
+	border-left-color:gray;
+	background-color:#FFC1C1;
+	}
+	
+	.rozmistnost1onlyaa {
+	border-left-color:gray;
+	background-color:#A3D175;
+	}
+	
+	.rozpredmet1abs {
+	border-left-color:gray;
+	border-top-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	.rozpredmet1mo {
+	border-left-color:gray;
+	border-top-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	
+	
+	.rozucitel1abs {
+	color:#FF0000;
+	border-left-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	.rozucitel1mo {
+	color:#FF0000;
+	border-left-color:gray;
+	background-color:#ADD8E6;
+	overflow:visible ;
+	}
+	
+	.rozskupina1abs {
+	border-left-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	.rozskupina1mo {
+	border-left-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	
+	.rozmistnost1abs {
+	background-color:#ADD8E6;
+	}
+	
+	.rozmistnost1mo {
+	background-color:#ADD8E6;
+	}
+	
+	
+	.rozmistnost1onlyabs {
+	border-left-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	.rozmistnost1onlymo {
+	border-left-color:gray;
+	background-color:#ADD8E6;
+	}
+	
+	.rozpredmet2 {
+	background-color:#FFFFF0;
+	border-top-color:gray;
+	}
+	
+	.rozpredmet2prvni {
+	background-color:#FFFFF0;
+	}
+	
+	.rozucitel2 {
+	background-color:#FFFFF0;
+	color:#FF0000;
+	}
+	
+	.rozskupina2 {
+	background-color:#FFFFF0;
+	}
+	
+	.rozmistnost2 {
+	background-color:#FFFFF0;
+	}
+	
+	.rozmistnost2only {
+	background-color:#FFFFF0;
+	}
+	
+	.rozbunka2 {
+	background-color:#FFFFF0;
+	border-color:gray;
+	}
+	
+	
+	.divbunka 
+	{
+	    margin:0;
+	    padding:0;
+	    border: 0px solid black;
+	    position:relative;
+	}
+	
+	
+	.tkspan 
+	{
+	    color:#8B5A2B;
+	    cursor: pointer; cursor: hand;
+	}
+	</string>
+    <string name="action_save">Objednat</string>
+    <string name="jidelnicek_save_dialog">Provedeny změny! Uložit?</string>
+    <string name="znamky_prospech">Celkový prospěch :</string>
+    <string name="znamkyBestPredmet">Nejlepší předmět :</string>
+    <string name="znamkyWorstPredmet">Nejhorší předmět :</string>
+    <string name="celkovyPrumer">Průměr všech známek :</string>
+    <string name="znamky_neprospel">neprospěl</string>
+    <string name="znamky_prospel">prospěl</string>
+    <string name="znamky_prospel_vyznamenani">prospěl s vyznamenáním</string>
+    <string name="znamky_unavailable">nedostupné známky</string>
+    <string name="bakLogin">Přihlášení bakaláři</string>
+    <string name="bakalari">Bakaláři :</string>
+    <string name="install_info_text">Vítejte v aplikaci GyMik</string>
+</resources>

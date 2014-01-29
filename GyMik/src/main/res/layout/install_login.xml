@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/installButton">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bakLogin"
+                style="@style/ListViewHeaderItem"
+                android:id="@+id/firstRunText"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/firstRunText"
+                android:background="@color/list_view_item_divider"
+                android:id="@+id/delimiter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delimiter"
+                android:text="@string/bakUser"
+                android:id="@+id/bak_username_text"
+                style="@style/ListViewItemText"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bak_username"
+                android:layout_below="@+id/bak_username_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bak_username"
+                android:text="@string/bakPsw"
+                android:id="@+id/bak_password_text"
+                style="@style/ListViewItemText"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bak_password"
+                android:layout_below="@+id/bak_password_text"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:id="@+id/installButton"
+        android:layout_alignParentBottom="true"
+        android:text="@string/continueString"/>
+    
+</RelativeLayout>

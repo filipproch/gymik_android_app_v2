@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GyMik.iml" filepath="$PROJECT_DIR$/GyMik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GyMik/GyMik-GyMik.iml" filepath="$PROJECT_DIR$/GyMik/GyMik-GyMik.iml" />
+    </modules>
+  </component>
+</project>
+
